@@ -1,0 +1,60 @@
+<!-- This is a simple HTML registration form for customer sign-up. It includes fields for first name, last name, username, email, password, confirm password, and age. The form uses JavaScript for validation and CSS for styling. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="customCss.css">
+    <script src="RegValid.js" defer></script>
+ </head>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+        <img src="image1.png" alt="User" class="profile-img">
+        <form class="registration-form" method="post" onsubmit="return validation()">
+            <div class="form-section">
+                <div class="input-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname">
+                    <div id="firstname-error" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname">
+                    <div id="lastname-error" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                    <div id="username-error" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <div id="email-error" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <div id="password-error" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" id="cpassword" name="cpassword">
+                    <div id="cpassword-error" class="error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age">
+                    <div id="age-error" class="error-message"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="REGISTER">
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

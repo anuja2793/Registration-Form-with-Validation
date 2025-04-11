@@ -1,0 +1,89 @@
+/* Custom CSS for Registration Form */
+body {
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-group {
+    width: 48%;
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-weight: bold;
+    display: block;
+}
+.input-group input {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.buttons input {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.buttons input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+.buttons input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.buttons input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+.buttons input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+@media (max-width: 768px) {
+    .form-section {
+        flex-direction: column;
+    }
+    .input-group {
+        width: 85%;
+    }
+}
